@@ -11,10 +11,6 @@ body {
 }
 #title {
   /* Requirement 2.D */
-  /* background: #A5E59B;
-  background: -webkit-radial-gradient(bottom, #A5E59B, #FAFAFA);
-  background: -moz-radial-gradient(bottom, #A5E59B, #FAFAFA);
-  background: radial-gradient(to top, #A5E59B, #FAFAFA); */
   margin: 0;
   padding: 0.5em; /* Requirement 2.10 */
   color: #231905; /* Requirement 2.3 */
@@ -23,9 +19,8 @@ nav.navbar {
   /* Requirement 2.C */
   border-top: 1px solid #0f3919; /* Requirement 2.5 */
   border-bottom: 1px solid #0f3919;
-  /* font-weight: bold; */
   font-size: 20px; /* Requirement 2.9 */
-  overflow: hidden;
+  overflow: hidden; /* Requirement 2.14 */
 }
 nav.navbar a {
   float: left; /* Requirement 2.11 */
@@ -45,6 +40,7 @@ nav.navbar {
   z-index: 100; /* Requirement 2.17 */
 }
 nav.navbar a:last-child {
+  /* Requirement 2.F */
   border-right: none;
 }
 a:link {
@@ -59,4 +55,39 @@ a:hover {
 }
 .main {
   margin: 5px;
+}
+td,
+th {
+  /* Requirement 2.B */
+  border: 1px solid #0f3919;
+  border-spacing: 5px;
+  font-size: 16px;
+}
+table {
+  width: 100%; /* Requirement 2.7 */
+}
+.home-table td:first-child {
+  width: 20%;
+}
+.home-table figure {
+  margin: 5px;
+  text-align: center;
+  font-size: 14px;
+}
+.home-table td:nth-child(2) {
+  padding: 5px;
+  width: 80%;
+}
+.dog-table #last-col {
+  width: 40%;
+  text-align: center;
+}
+.dog-table tr {
+  text-align: center;
+}
+.home-table {
+  list-style-image: url("images/twicelogo.png"); /* Requirement 2.8 */
+}
+#welcome {
+  text-align: center;
 }
