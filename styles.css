@@ -1,5 +1,4 @@
-body {
-  /* Requirement 2.A */
+body /* Requirement 2.A */ {
   background: #a5e59b; /* Requirement 2.4 */
   background: -webkit-radial-gradient(center, #a5e59b, #fafafa);
   background: -moz-radial-gradient(center, #a5e59b, #fafafa);
@@ -9,14 +8,12 @@ body {
   margin-left: 0;
   margin-right: 0;
 }
-#title {
-  /* Requirement 2.D */
+#title /* Requirement 2.D */ {
   margin: 0;
   padding: 0.5em; /* Requirement 2.10 */
   color: #231905; /* Requirement 2.3 */
 }
-nav.navbar {
-  /* Requirement 2.C */
+nav.navbar /* Requirement 2.C */ {
   border-top: 1px solid #0f3919; /* Requirement 2.5 */
   border-bottom: 1px solid #0f3919;
   font-size: 20px; /* Requirement 2.9 */
@@ -39,12 +36,10 @@ nav.navbar {
   padding: 5px;
   z-index: 100; /* Requirement 2.17 */
 }
-nav.navbar a:last-child {
-  /* Requirement 2.F */
+nav.navbar a:last-child /* Requirement 2.F */ {
   border-right: none;
 }
-a:link {
-  /* Requirement 2.E */
+a:link /* Requirement 2.E */ {
   color: #0f3919;
 }
 a:visited {
@@ -57,8 +52,7 @@ a:hover {
   margin: 5px;
 }
 td,
-th {
-  /* Requirement 2.B */
+th /* Requirement 2.B */ {
   border: 1px solid #0f3919;
   border-spacing: 5px;
   font-size: 16px;
@@ -90,4 +84,22 @@ table {
 }
 #welcome {
   text-align: center;
+}
+.main-mid {
+  margin: 5px;
+}
+.left-float {
+  float: left;
+  padding-right: 5px;
+}
+.right-float {
+  float: right;
+  padding-left: 5px;
+}
+.clear-mid {
+  padding: 5px;
+  clear: both; /* Requirement 2.13 */
+}
+#hidden {
+  visibility: hidden; /* Requirement 2.16 */
 }
